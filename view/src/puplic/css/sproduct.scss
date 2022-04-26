@@ -1,0 +1,58 @@
+@import './style.scss';
+
+
+#prodetails{
+    display: flex;
+    margin-top:20px;
+
+    .single-pro-image{
+        width: 40%;
+        margin-right: 50px;
+        .small-img-group{
+            display:flex;
+            justify-content: space-between;
+            .small-img-col{
+                flex-basis: 24%;
+                cursor: pointer;
+
+            }
+        }
+    }
+    .single-pro-details{
+        width: 50%;
+        padding-top:30px;
+        h4{
+            padding:40px 0 20px 0;
+
+        }
+        h2{
+            font-size:2.6rem;
+
+            
+        }
+        select{
+            display:block;
+            padding:5px 10px;
+            margin-bottom: 10px;
+        }
+        input{
+           width:50px;
+           height:47px;
+           padding-left: 10px; 
+           font-size: 16px;
+           margin-right: 10px;
+           &:focus{
+               outline:none;
+           }
+        }
+        button{
+            background-color: $c-hover ;
+            color: $c-text-white
+        }
+        span{
+            line-height: 2.5rem ;
+        }
+        
+    }
+
+}
